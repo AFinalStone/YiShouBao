@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/res_circle_shape_adapter_child"
+    android:orientation="vertical"
+    android:padding="1px">
+
+
+    <ImageView
+        android:id="@+id/iv_goodsImages"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:src="@mipmap/icon_empty" />
+
+    <TextView
+        android:id="@+id/tv_goodsName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:gravity="center|left"
+        android:maxLines="2"
+        android:text="戴尔(DELL) 917s 19英寸5:4正屏IPS屏液"
+        android:textColor="@color/colorBlack_FF444444"
+        android:textSize="@dimen/textFontSize_9" />
+
+    <TextView
+        android:id="@+id/tv_goodsPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:singleLine="true"
+        android:text="3150"
+        android:textColor="@color/colorBlack_FF333333"
+        android:textSize="@dimen/textFontSize_11" />
+</LinearLayout>

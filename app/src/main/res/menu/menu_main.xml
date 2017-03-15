@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+
+  <item android:id="@+id/drawer_home"
+      android:title="@string/drawer_home"
+      android:orderInCategory="80"
+      android:icon="@mipmap/icon_drawer_home"
+      app:showAsAction="ifRoom" />
+
+  <item android:id="@+id/drawer_setting"
+        android:title="@string/drawer_setting"
+        android:orderInCategory="90"
+        android:icon="@mipmap/icon_drawer_setting"
+        app:showAsAction="ifRoom" />
+
+
+  <item android:id="@+id/drawer_share"
+        android:title="@string/drawer_share"
+        android:orderInCategory="100"
+        android:icon="@mipmap/icon_drawer_share"
+        app:showAsAction="ifRoom"/>
+
+  <item android:id="@+id/drawer_about"
+        android:title="@string/drawer_about"
+        android:orderInCategory="110"
+        android:icon="@mipmap/icon_drawer_about"
+        app:showAsAction="ifRoom"/>
+
+  <item android:id="@+id/drawer_advice"
+        android:title="@string/drawer_advice"
+        android:orderInCategory="110"
+        android:icon="@mipmap/icon_drawer_advice"
+        app:showAsAction="ifRoom"/>
+
+</menu>

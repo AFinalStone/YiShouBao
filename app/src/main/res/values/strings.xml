@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">易售宝</string>
+
+    <string name="title_back">返回</string>
+
+    <!--主页数据-->
+    <string name="MainActivity_tv_shopCenter">店铺中心</string>
+    <string name="MainActivity_tv_checkStand">收银台</string>
+    <string name="MainActivity_tv_shoppingMall">商城</string>
+    <string name="MainActivity_tv_resCircle">资源圈</string>
+
+    <!--收银台页面-->
+    <string name="title_CheckStandWithdrawalActivity">收银台</string>
+    <string name="CheckStandWithdrawalActivity_tv_arriveTomorrow">隔天到</string>
+    <string name="CheckStandWithdrawalActivity_tv_arriveImmediately">秒到</string>
+    <string name="CheckStandWithdrawalActivity_tv_totalMoneyCanWithdraw">可提现金额(元)</string>
+    <string name="CheckStandWithdrawalActivity_tv_WithdrawImmediately">立即提现</string>
+    <string name="CheckStandWithdrawalActivity_tv_SaoMDesc">扫描图中二维码付款</string>
+
+    <!--收银台流水-->
+    <string name="title_CheckStandMoneyRecord">支付流水</string>
+    <string name="CheckStandMoneyRecord_tv_charge_C">手续费:</string>
+    <string name="CheckStandMoneyRecord_tv_enter">转入</string>
+    <string name="CheckStandMoneyRecord_tv_Withdrawal">提现</string>
+
+    <!--我的店铺二维码界面-->
+    <string name="title_myShop">我的店铺</string>
+    <string name="MyShop_tv_share">分享</string>
+
+    <!--店铺中心-->
+    <string name="title_shopCenter">科技的小店</string>
+    <string name="ShopCenter_tv_sevenDaysSales">七日销售</string>
+
+    <string name="ShopCenter_tv_todayVisitors">今日访客</string>
+    <string name="ShopCenter_tv_sevenDaysOrder">七日订单</string>
+    <string name="ShopCenter_tv_totalReceipt">累计收入</string>
+
+    <string name="ShopCenter_tv_allOrder">全部</string>
+    <string name="ShopCenter_tv_waitingPayOrder">待付款</string>
+    <string name="ShopCenter_tv_waitingSendOrder">待发货</string>
+    <string name="ShopCenter_tv_haveSendOrder">已发货</string>
+
+    <string name="ShopCenter_tv_checkStand">收银台</string>
+    <string name="ShopCenter_tv_goodsManager">商品管理</string>
+    <string name="ShopCenter_tv_addressManager">地址管理</string>
+    <string name="ShopCenter_tv_myShop">我的店铺</string>
+    <string name="ShopCenter_tv_wxShopManager">微信管理</string>
+    <string name="ShopCenter_tv_accountManager">账号管理</string>
+
+    <!--店铺销售数据统计-->
+    <string name="title_SaleStatisticsChart_">数据统计</string>
+    <string name="SaleStatisticsChart__tv_order">订单</string>
+    <string name="SaleStatisticsChart__tv_visitor">访客</string>
+    <string name="SaleStatisticsChart__tv_sales">营收</string>
+
+    <!--资源圈页面-->
+    <string name="title_ResCircle">资源圈</string>
+    <string name="ResCircle_btn_enterShop">进入店铺</string>
+    <string name="ResCircle_tv_newGoodsRecommend">新品推荐</string>
+
+    <!--商城页面-->
+    <string name="title_ShoppingMall">商家列表</string>
+    <string name="ShoppingMall_allShop">全部行业</string>
+    <string name="ShoppingMall_applyEnter">申请入驻</string>
+    <string name="ShoppingMall_applyAgent">申请代理</string>
+    <string name="ShoppingMall_downApp">App下载</string>
+    <string name="ShoppingMall_conditionDigitalDevice">数码设备</string>
+    <string name="ShoppingMall_conditionElecDevice">机电设备</string>
+    <string name="ShoppingMall_conditionFoodBeverage">食品饮料</string>
+    <string name="ShoppingMall_conditionGeneralMerchandise">日用百货</string>
+    <string name="ShoppingMall_conditionHardwareTools">五金工具</string>
+    <string name="ShoppingMall_conditionLabourProtectionAppliances">劳动保护用品</string>
+    <string name="ShoppingMall_conditionLanternsGoods">灯具商品</string>
+    <string name="ShoppingMall_conditionLifeElec">生活电器</string>
+    <string name="ShoppingMall_conditionOfficeEquipment">办公设备</string>
+    <string name="ShoppingMall_conditionOfficeFurniture">办公家具</string>
+    <string name="ShoppingMall_conditionOfficeSupplies">办公用品</string>
+    <string name="ShoppingMall_conditionSportsGoods">体育用品</string>
+    <string name="ShoppingMall_conditionTeachingResearch">教学科研</string>
+    <string name="ShoppingMall_conditionDitionSafety">安全防护</string>
+
+    <!--地址管理-->
+    <string name="title_AddressManager">地址管理</string>
+    <string name="AddressManager_tv_receiverAddressHint">请填写详细地址，不少于5个字</string>
+    <string name="AddressManager_tv_save">保存</string>
+    <string name="title_activity_splash">SplashActivity</string>
+
+    <!--闪屏-->
+    <string name="Splash_AuthorInfo">AFinalStone</string>
+
+    <string name="Splash_appDesc">易售宝</string>
+
+
+    <string name="drawer_home">首页</string>
+    <string name="drawer_setting">设置</string>
+    <string name="drawer_share">分享</string>
+    <string name="drawer_about">关于</string>
+    <string name="drawer_advice">意见反馈</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="drawer_exit">退出</string>
+</resources>

@@ -1,0 +1,100 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyAppTheme" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="titleTextColor">@color/colorBlack_FF333333</item>
+        <item name="android:textColorPrimary">@color/colorBlack_FF333333</item>
+        <item name="android:listDivider">@drawable/recycler_view_divider_bg01</item>
+
+    </style>
+
+    <style name="SplashTheme" parent="MyAppTheme">
+        <item name="android:windowBackground">@mipmap/backgroud_splash</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--水波纹按钮效果-->
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button">
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>//按钮按下的水波纹改变颜色
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="MyAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="MyAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/md_green_500</item>
+        <item name="colorPrimaryDark">@color/md_green_700</item>
+        <item name="colorAccent">@color/md_blue_A200</item>
+        <item name="colorControlHighlight">@color/md_green_500_25</item>​
+        <item name="colorControlNormal">@color/md_black_1000_50</item>
+        <item name="colorSwitchThumbNormal">@color/md_grey_200</item>
+        <item name="android:colorForeground">@color/md_black_1000_75</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/md_green_500</item>
+    </style>
+
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/md_red_500</item>
+        <item name="colorPrimaryDark">@color/md_red_700</item>
+        <item name="colorAccent">@color/md_blue_A200</item>
+        <item name="colorControlHighlight">@color/md_red_500_25</item>​
+        <item name="colorControlNormal">@color/md_black_1000_50</item>
+        <item name="colorSwitchThumbNormal">@color/md_grey_200</item>
+        <item name="android:colorForeground">@color/md_black_1000_75</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/md_red_500</item>​
+    </style>
+
+
+    <style name="AppTheme3" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/md_blue_grey_500</item>
+        <item name="colorPrimaryDark">@color/md_blue_grey_700</item>
+        <item name="colorAccent">@color/md_light_blue_A400</item>
+        <item name="colorControlHighlight">@color/md_blue_grey_500_25</item>​
+        <item name="colorControlNormal">@color/md_black_1000_50</item>
+        <item name="colorSwitchThumbNormal">@color/md_grey_200</item>
+        <item name="android:colorForeground">@color/md_black_1000_75</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/md_blue_grey_500</item>
+    </style>
+
+
+    <style name="AppTheme4" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/md_falcon_500</item>
+        <item name="colorPrimaryDark">@color/md_falcon_700</item>
+        <item name="colorAccent">@color/md_falcon_A400</item>
+        <item name="colorControlHighlight">@color/md_falcon_500_25</item>​​
+        <item name="colorControlNormal">@color/md_black_1000_50</item>
+        <item name="colorSwitchThumbNormal">@color/md_grey_200</item>
+        <item name="android:colorForeground">@color/md_black_1000_75</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/md_falcon_500</item>
+    </style>
+
+
+    <style name="AppTheme5" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/md_blue_500</item>
+        <item name="colorPrimaryDark">@color/md_blue_700</item>
+        <item name="colorAccent">@color/md_blue_500</item>
+        <item name="colorControlHighlight">@color/md_blue_500_25</item>​
+        <item name="colorControlNormal">@color/md_black_1000_50</item>
+        <item name="colorSwitchThumbNormal">@color/md_grey_200</item>
+        <item name="android:colorForeground">@color/md_black_1000_75</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/md_blue_500</item>
+    </style>
+
+</resources>

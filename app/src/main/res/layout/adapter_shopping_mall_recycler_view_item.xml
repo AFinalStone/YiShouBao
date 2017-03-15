@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="18dp"
+    android:layout_marginRight="18dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    app:cardElevation="5dp"
+    app:contentPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_shopLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/icon_xlxq_logo" />
+
+        <Button
+            android:id="@+id/btn_applyAgent"
+            android:layout_width="55dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shopping_mall_shape_recycler_apply_agent"
+            android:text="@string/ShoppingMall_applyAgent"
+            android:textColor="@drawable/shopping_mall_shape_recycler_apply_agent"
+            android:textSize="@dimen/textFontSize_12" />
+
+        <Button
+            android:id="@+id/btn_downApp"
+            android:layout_width="55dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/btn_applyAgent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shopping_mall_shape_recycler_down_app"
+            android:text="@string/ShoppingMall_downApp"
+            android:textColor="@drawable/shopping_mall_shape_recycler_down_app"
+            android:textSize="@dimen/textFontSize_12" />
+
+        <TextView
+            android:id="@+id/tv_shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/btn_applyAgent"
+            android:layout_toRightOf="@id/iv_shopLogo"
+            android:text="杭州乡里乡亲科技有限公司"
+            android:textColor="@color/colorBlack_FFCCCCCC"
+            android:textSize="@dimen/textFontSize_14" />
+
+        <TextView
+            android:id="@+id/tv_shopUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_shopName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@id/btn_applyAgent"
+            android:layout_toRightOf="@id/iv_shopLogo"
+            android:text="www.hzxlxq.com"
+            android:textColor="@color/colorBlack_FF666666"
+            android:textSize="@dimen/textFontSize_14" />
+
+        <View
+            android:id="@+id/view_border"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/iv_shopLogo"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/res_circle_shape_line_dash_black" />
+
+        <ImageView
+            android:id="@+id/iv_shopImage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/view_border"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/icon_xlxq_logo" />
+
+        <TextView
+            android:id="@+id/tv_ShopDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@id/view_border"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/iv_shopImage"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="主营：电脑数码、办公用品、电脑数码、办公用品"
+            android:textColor="@color/colorBlack_FF666666"
+            android:textSize="@dimen/textFontSize_12" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

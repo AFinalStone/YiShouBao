@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack_FFF5F5F5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_sevenDaysSales"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="?attr/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="@dimen/badge_width_padding"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_sevenDaysSales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="@color/colorBlack_FF333333"
+                android:textSize="@dimen/textFontSize_32"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/ShopCenter_tv_sevenDaysSales"
+                android:textColor="@color/colorBlack_FF666666"
+                android:textSize="@dimen/textFontSize_12" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="55dp"
+            android:src="@mipmap/icon_arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dividingLineColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorWhite_FFFFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/colorBlack_FF333333"
+                android:textSize="@dimen/textFontSize_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ShopCenter_tv_todayVisitors"
+                android:textColor="@color/colorBlack_FF666666"
+                android:textSize="@dimen/textFontSize_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/colorBlack_FF333333"
+                android:textSize="@dimen/textFontSize_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ShopCenter_tv_sevenDaysOrder"
+                android:textColor="@color/colorBlack_FF666666"
+                android:textSize="@dimen/textFontSize_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="@color/colorBlack_FF333333"
+                android:textSize="@dimen/textFontSize_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ShopCenter_tv_totalReceipt"
+                android:textColor="@color/colorBlack_FF666666"
+                android:textSize="@dimen/textFontSize_12" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dividingLineColor" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dividingLineColor" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_myOrders"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/colorWhite_FFFFFFFF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_allOrder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/icon_shop_center_order_all" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/ShopCenter_tv_allOrder"
+                android:textColor="@color/colorBlack_FF333333"
+                android:textSize="@dimen/textFontSize_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_waitingPayOrder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_waitingPayOrder"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/icon_shop_center_order_waiting_pay" />
+
+                <Button
+                    android:id="@+id/btn_numberWaitingPay"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_toRightOf="@id/iv_waitingPayOrder"
+                    android:background="@drawable/shop_center_shape_number_top_right"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="2"
+                    android:textColor="@color/colorWhite_FFFFFFFF"
+                    android:textSize="@dimen/textFontSize_10"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/ShopCenter_tv_waitingPayOrder"
+                android:textColor="@color/colorBlack_FF333333"
+                android:textSize="@dimen/textFontSize_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_waitingSendOrder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_waitingSendOrder"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/icon_shop_center_order_waiting_send" />
+
+                <Button
+                    android:id="@+id/tv_numberWaitingSendOrder"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_toRightOf="@id/iv_waitingSendOrder"
+                    android:background="@drawable/shop_center_shape_number_top_right"
+                    android:gravity="center"
+                    android:text="8"
+                    android:textColor="@color/colorWhite_FFFFFFFF"
+                    android:textSize="@dimen/textFontSize_10"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_waitingSendOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/ShopCenter_tv_waitingSendOrder"
+                android:textColor="@color/colorBlack_FF333333"
+                android:textSize="@dimen/textFontSize_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_haveSendOrder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/icon_shop_center_order_have_send" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/ShopCenter_tv_haveSendOrder"
+                android:textColor="@color/colorBlack_FF333333"
+                android:textSize="@dimen/textFontSize_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dividingLineColor" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dividingLineColor" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="1dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp" />
+
+</LinearLayout>

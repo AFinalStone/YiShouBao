@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+
+    <item android:drawable="@mipmap/icon_shopping_mall_title_left_select"
+        android:color="@color/colorRed_FFFF6C6C"
+        android:state_checked="true"/>
+
+    <item android:drawable="@mipmap/icon_shopping_mall_title_left_select"
+        android:color="@color/colorRed_FFFF6C6C"
+        android:state_pressed="true"/>
+
+    <item android:drawable="@mipmap/icon_shopping_mall_title_left_unselect"
+        android:color="@color/colorBlack_FF333333"/>
+
+    
+</selector>
+ 

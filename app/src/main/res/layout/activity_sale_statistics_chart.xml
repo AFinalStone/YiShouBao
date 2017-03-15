@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SaleStatisticsChartActivity">
+
+    <include layout="@layout/layout_title" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="302dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/sale_statistics_chart_shape_check_out"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_order"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/sale_statistics_chart_selector_check_left"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/SaleStatisticsChart__tv_order"
+            android:textColor="@drawable/sale_statistics_chart_selector_check_left" />
+
+        <RadioButton
+            android:id="@+id/rb_visitor"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/sale_statistics_chart_selector_check_center"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/SaleStatisticsChart__tv_visitor"
+            android:textColor="@drawable/sale_statistics_chart_selector_check_center" />
+
+        <RadioButton
+            android:id="@+id/rb_sales"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/sale_statistics_chart_selector_check_right"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/SaleStatisticsChart__tv_sales"
+            android:textColor="@drawable/sale_statistics_chart_selector_check_right" />
+    </RadioGroup>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/white"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/colorRed_FFFF6C6C"
+        app:tabSelectedTextColor="@color/colorRed_FFFF6C6C"
+        app:tabTextColor="@color/colorBlack_FF333333" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dividingLineColor"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

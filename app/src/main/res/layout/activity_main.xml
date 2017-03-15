@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dividingLineColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_shopCenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_shopCenter"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/icon_shop_center_unselect" />
+
+            <TextView
+                android:id="@+id/tv_shopCenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/MainActivity_tv_shopCenter"
+                android:textColor="@color/colorBlack_FF999999"
+                android:textSize="@dimen/textFontSize_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_checkStand"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_checkStand"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/icon_check_stand_unselect" />
+
+            <TextView
+                android:id="@+id/tv_checkStand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/MainActivity_tv_checkStand"
+                android:textColor="@color/colorBlack_FF999999"
+                android:textSize="@dimen/textFontSize_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_shoppingMall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_shoppingMall"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/icon_shopping_mall_unselect" />
+
+            <TextView
+                android:id="@+id/tv_shoppingMall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/MainActivity_tv_shoppingMall"
+                android:textColor="@color/colorBlack_FF999999"
+                android:textSize="@dimen/textFontSize_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_resCircle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_resCircle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/icon_res_circle_unselect" />
+
+            <TextView
+                android:id="@+id/tv_resCircle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/MainActivity_tv_resCircle"
+                android:textColor="@color/colorBlack_FF999999"
+                android:textSize="@dimen/textFontSize_10" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

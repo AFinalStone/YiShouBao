@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.ShopCenterFragment">
+
+    <include layout="@layout/layout_title" />
+
+    <com.afinalstone.androidstudy.swiperefreshview.SwipeRefreshListView
+        android:id="@+id/swipeRefreshListView"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

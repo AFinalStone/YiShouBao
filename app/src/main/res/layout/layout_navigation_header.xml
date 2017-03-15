@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:background="?attr/colorPrimaryDark"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_gravity="start"
+    android:fadeScrollbars="false"
+    android:scrollbars="none"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <com.jvhe.yishoubao.view.ShapedImageView
+        android:id="@+id/shapedImageView"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_splash_author"
+        app:shape_mode="circle" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shapedImageView"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="用户名"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="?attr/colorAccent"
+        android:textSize="18sp" />
+
+</RelativeLayout>
