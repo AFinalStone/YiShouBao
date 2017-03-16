@@ -20,6 +20,7 @@ import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.github.mikephil.charting.utils.ColorTemplate;
 import com.jvhe.yishoubao.R;
 import com.jvhe.yishoubao.SaleLine.WeekXAxisFormatter;
+import com.jvhe.yishoubao.activity.MyBaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +29,7 @@ import java.util.List;
  * Created by SHI on 2017/3/1 13:58
  * 商城
  */
-public class SaleLineFragment extends MyBaseFragment<AppCompatActivity> {
+public class SaleLineFragment extends MyBaseFragment<MyBaseActivity> {
 
     private String title;
 
@@ -38,6 +39,7 @@ public class SaleLineFragment extends MyBaseFragment<AppCompatActivity> {
     public View initView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = View.inflate(mActivity, R.layout.fragment_sale_line, null);
         lineChart = (LineChart) rootView.findViewById(R.id.lineChart);
+
         return rootView;
     }
 
@@ -80,7 +82,7 @@ public class SaleLineFragment extends MyBaseFragment<AppCompatActivity> {
         //设置折线A相关属性
         LineDataSet dataSetA = new LineDataSet(getChartDataA(), "A");
         //设置折线A的颜色
-        int colorLineA = getResources().getColor(R.color.colorBlack_FF333333);
+        int colorLineA = mActivity.colorPrimary;
         dataSetA.setColor(colorLineA);
         dataSetA.setLineWidth(1f);
         //设置折线A折线点的颜色
@@ -89,14 +91,14 @@ public class SaleLineFragment extends MyBaseFragment<AppCompatActivity> {
         dataSetA.setCircleHoleRadius(1f);
         //设置点击某个点时候的横纵坐标
         dataSetA.setHighlightLineWidth(2f);
-        dataSetA.setHighLightColor(getResources().getColor(R.color.colorPrimary));
+        dataSetA.setHighLightColor(colorLineA);
         //设置底部的遮影
 //        dataSetB.setDrawFilled(true);
 
         //设置折线B相关属性
         LineDataSet dataSetB = new LineDataSet(getChartDataB(), "B");
         //设置折线A的颜色
-        int colorLineB = getResources().getColor(R.color.colorRed_FFFF6C6C);
+        int colorLineB = mActivity.colorAccent;
         dataSetB.setColor(colorLineB);
         dataSetB.setLineWidth(1f);
         //设置折线A折线点的颜色
@@ -105,7 +107,7 @@ public class SaleLineFragment extends MyBaseFragment<AppCompatActivity> {
         dataSetB.setCircleHoleRadius(1f);
         //设置点击某个点时候的横纵坐标
         dataSetB.setHighlightLineWidth(2f);
-        dataSetB.setHighLightColor(getResources().getColor(R.color.colorPrimary));
+        dataSetB.setHighLightColor(colorLineB);
         //设置底部的遮影
 //        dataSetB.setDrawFilled(true);
 

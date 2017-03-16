@@ -34,6 +34,9 @@ public class AddressManageActivity extends MyBaseActivity implements
 
     @BindView(R.id.iv_titleLeft)
     ImageView iv_titleLeft;
+
+    @BindView(R.id.tv_titleLeft)
+    TextView tv_titleLeft;
     /**
      * 地址管理
      **/
@@ -73,6 +76,8 @@ public class AddressManageActivity extends MyBaseActivity implements
         setContentView(R.layout.activity_address_manage);
         ButterKnife.bind(this);
         iv_titleLeft.setVisibility(View.VISIBLE);
+        tv_titleLeft.setVisibility(View.VISIBLE);
+        tv_titleLeft.setText(R.string.title_back);
         tv_title.setText(R.string.title_AddressManager);
         iv_titleRight.setImageResource(R.mipmap.icon_address_manager_title_right_add);
         iv_titleRight.setVisibility(View.VISIBLE);
@@ -83,7 +88,7 @@ public class AddressManageActivity extends MyBaseActivity implements
 
 
         // 初始化listView控件和外围的刷新控件
-//		listViewIsEmpty = (ImageView) View.inflate(mContext,R.layout.adapter_address_manager_listview_empty, null);
+//		listViewIsEmpty = (ImageView) View.inflate(mContext,R.layout.common_adapter_listview_empty, null);
 //		if(swipeRefreshListView.getListView().getHeaderViewsCount() == 0){
 //			swipeRefreshListView.getListView().addHeaderView(listViewIsEmpty);
 //		}

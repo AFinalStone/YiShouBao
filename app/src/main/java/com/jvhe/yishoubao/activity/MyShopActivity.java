@@ -20,6 +20,9 @@ public class MyShopActivity extends MyBaseActivity {
     @BindView(R.id.iv_titleLeft)
     ImageView iv_titleLeft;
 
+    @BindView(R.id.tv_titleLeft)
+    TextView tv_titleLeft;
+
     /**
      * 主页标题
      **/
@@ -82,6 +85,8 @@ public class MyShopActivity extends MyBaseActivity {
         setContentView(rootView);
         ButterKnife.bind(this);
         iv_titleLeft.setVisibility(View.VISIBLE);
+        tv_titleLeft.setVisibility(View.VISIBLE);
+        tv_titleLeft.setText(R.string.title_back);
         iv_titleRight.setVisibility(View.GONE);
         tv_titleRight.setVisibility(View.VISIBLE);
         tv_titleRight.setText(R.string.MyShop_tv_share);

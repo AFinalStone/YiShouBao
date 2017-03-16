@@ -30,6 +30,12 @@ public class AddressEditActivity extends MyBaseActivity implements OnClickListen
      **/
     @BindView(R.id.iv_titleLeft)
     ImageView iv_titleLeft;
+
+    /**
+     * 返回控件
+     **/
+    @BindView(R.id.tv_titleLeft)
+    TextView tv_titleLeft;
     /**
      * 标题
      **/
@@ -89,6 +95,8 @@ public class AddressEditActivity extends MyBaseActivity implements OnClickListen
         setContentView(rootView);
         ButterKnife.bind(this);
         iv_titleLeft.setVisibility(View.VISIBLE);
+        tv_titleLeft.setVisibility(View.VISIBLE);
+        tv_titleLeft.setText(R.string.title_back);
         tv_titleRight.setVisibility(View.VISIBLE);
         tv_titleRight.setText(R.string.AddressManager_tv_save);
         iv_titleRight.setVisibility(View.GONE);
@@ -175,7 +183,7 @@ public class AddressEditActivity extends MyBaseActivity implements OnClickListen
             ToastUtil.show(mContext, "请输入收货人名称");
             return false;
         }
-        if (!InformationCodeUtil.regExpPhotoNumber.matches(et_userPhone.getText().toString())) {
+        if (!InformationCodeUtil.RegExp_PhotoNumber.matches(et_userPhone.getText().toString())) {
             ToastUtil.show(mContext, "请输入合法的手机号码");
             return false;
         }

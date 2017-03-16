@@ -9,18 +9,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.jvhe.yishoubao.activity.MyBaseActivity;
+
 import butterknife.Unbinder;
 
 /**
  * Created by SHI on 2016/7/27 10:37
  */
-public abstract  class MyBaseFragment<T extends FragmentActivity> extends Fragment {
+public abstract  class MyBaseFragment<T extends MyBaseActivity> extends Fragment {
 
     /**当前设备上下文**/
     protected T mActivity;
     /**网络请求是否成功**/
     protected boolean connectSuccessFlag = false;
     protected Unbinder unbinder;
+
     /**初始化界面布局**/
     public abstract View initView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState);
 

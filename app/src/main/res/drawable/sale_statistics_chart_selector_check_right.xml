@@ -7,7 +7,7 @@
             android:shape="rectangle" >
 
             <!-- 填充的颜色 -->
-            <solid android:color="@color/colorRed_FFFF6C6C" />
+            <solid android:color="?attr/colorPrimary" />
             <!-- 按钮的四个角的弧形-->
             <corners android:topRightRadius="30dp"
                 android:bottomRightRadius="30dp"/>
@@ -15,7 +15,7 @@
         </shape>
     </item>
 
-    <item android:color="@color/colorRed_FFFF6C6C" >
+    <item android:color="?attr/colorPrimary" >
         <shape xmlns:android="http://schemas.android.com/apk/res/android"
             android:shape="rectangle" >
 

@@ -44,4 +44,6 @@ dependencies {
     compile 'com.github.PhilJay:MPAndroidChart:v3.0.1'
     compile 'com.afinalstone:SwiperefreshView:1.0.8'
     compile 'com.jude:utils:1.2.1'
+    compile 'com.jude:fitsystemwindowlayout:2.1.5'
+    compile 'com.orhanobut:dialogplus:1.11@aar'
 }

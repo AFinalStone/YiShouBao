@@ -2,6 +2,7 @@ package com.jvhe.yishoubao.fragment;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -47,7 +48,8 @@ public class ShopCenterFragment extends MyBaseFragment<HomeActivity> implements 
 //    TextView tv_title;
 
     List<Model> listData;
-    MyBaseAdapter myBaseAdapter;
+    MyGridAdapter myBaseAdapter;
+    private int colorGridItem;
 
     @Override
     public View initView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -63,6 +65,11 @@ public class ShopCenterFragment extends MyBaseFragment<HomeActivity> implements 
 
     @Override
     public void initData() {
+        TypedArray array = mActivity.getTheme().obtainStyledAttributes(new int[] {
+                android.R.attr.colorPrimary,
+        });
+        colorGridItem = array.getColor(0, getResources().getColor(R.color.colorPrimary));
+
         listData = new ArrayList<>();
         listData.add(new Model(R.mipmap.icon_shop_center_model_check_stand, getString(R.string.ShopCenter_tv_checkStand)));
         listData.add(new Model(R.mipmap.icon_shop_center_model_goods_manager, getString(R.string.ShopCenter_tv_goodsManager)));
@@ -142,6 +149,7 @@ public class ShopCenterFragment extends MyBaseFragment<HomeActivity> implements 
             }
             Model model = listData.get(position);
             ImagerLoaderUtil.getInstance(mActivity).displayMyImage(model.modelUrl, holder.iv_model);
+            holder.iv_model.setColorFilter(colorGridItem);
             holder.tv_modelName.setText(model.modelName);
 
             return convertView;

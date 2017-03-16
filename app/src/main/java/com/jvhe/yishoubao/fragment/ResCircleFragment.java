@@ -16,6 +16,7 @@ import android.widget.TextView;
 import com.afinalstone.androidstudy.swiperefreshview.OnSwipeRefreshViewListener;
 import com.afinalstone.androidstudy.swiperefreshview.SwipeRefreshListView;
 import com.jvhe.yishoubao.R;
+import com.jvhe.yishoubao.activity.MyBaseActivity;
 import com.jvhe.yishoubao.adapter.MyBaseAdapter;
 import com.jvhe.yishoubao.util.ToastUtil;
 
@@ -29,7 +30,7 @@ import butterknife.ButterKnife;
  * Created by  SHI on 2017/3/1 13:58
  * 资源圈
  */
-public class ResCircleFragment extends MyBaseFragment<AppCompatActivity> {
+public class ResCircleFragment extends MyBaseFragment<MyBaseActivity> {
 
     @BindView(R.id.tv_title)
     TextView tv_title;

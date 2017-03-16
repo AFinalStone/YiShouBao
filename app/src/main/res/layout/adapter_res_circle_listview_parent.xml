@@ -73,7 +73,7 @@
                 android:layout_width="5dp"
                 android:layout_height="15dp"
                 android:layout_marginLeft="15dp"
-                android:background="@color/colorRed_FFFF6C6C" />
+                android:background="?attr/colorPrimary" />
 
             <TextView
                 android:layout_width="wrap_content"

@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorWhite_FFFFFFFF"
-    android:orientation="vertical"
-    android:paddingBottom="20dp">
+    android:orientation="vertical">
 
     <include layout="@layout/layout_title" />
 
@@ -86,7 +85,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:background="@color/colorRed_FFFF6C6C"
+            android:background="?attr/colorPrimary"
             android:gravity="center|left"
             android:paddingLeft="40dp"
             android:text="@string/CheckStandWithdrawalActivity_tv_totalMoneyCanWithdraw"
@@ -96,7 +95,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:background="@color/colorRed_FFFF6C6C"
+            android:background="?attr/colorPrimary"
             android:orientation="horizontal">
 
             <TextView
@@ -127,7 +126,7 @@
             android:id="@+id/iv_QDCode"
             android:layout_width="225dp"
             android:layout_height="225dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_gravity="center"
             android:background="@color/colorWhite_FFFFFFFF"
             android:scaleType="centerInside" />

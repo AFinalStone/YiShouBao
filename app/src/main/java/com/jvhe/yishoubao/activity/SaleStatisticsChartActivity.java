@@ -12,6 +12,7 @@ import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.jvhe.yishoubao.R;
@@ -36,6 +37,9 @@ public class SaleStatisticsChartActivity extends MyBaseActivity {
     @BindView(R.id.tv_title)
     TextView tv_title;
 
+    @BindView(R.id.radioGroup)
+    RadioGroup radioGroup;
+
     @BindView(R.id.tabLayout)
     TabLayout tabLayout;
 
@@ -54,6 +58,8 @@ public class SaleStatisticsChartActivity extends MyBaseActivity {
         tv_titleLeft.setText(R.string.title_back);
         tv_titleLeft.setVisibility(View.VISIBLE);
         tv_title.setText(R.string.title_SaleStatisticsChart_);
+        radioGroup.check(R.id.rb_order);
+
 
         SaleLineFragment saleLineFragment= new SaleLineFragment();
         saleLineFragment.setTitle("7天");

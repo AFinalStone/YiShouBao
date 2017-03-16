@@ -103,6 +103,32 @@ public class HomeActivity extends MyBaseActivity implements BottomNavigationBar.
         listView_leftMenu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position){
+
+                    case 0:
+                        mDrawerLayout.closeDrawers();
+                        break;
+
+                    case 1:
+                        //设置
+                        Intent settingIntent = new Intent();
+                        settingIntent.setClass(mContext, SettingActivity.class);
+                        startActivity(settingIntent);
+                        break;
+
+                    case 2:
+                        break;
+
+                    case 3:
+                        break;
+
+                    case 4:
+                        //关于
+                        Intent intent = new Intent();
+                        intent.setClass(mContext, AboutActivity.class);
+                        startActivity(intent);
+                        break;
+                }
 
             }
         });
@@ -110,8 +136,9 @@ public class HomeActivity extends MyBaseActivity implements BottomNavigationBar.
 
     @Override
     public void initData() {
+
+        int textColorSelect = colorPrimary;
         int textColorUnSelect = getResources().getColor(R.color.colorBlack_FF999999);
-        int textColorSelect = getResources().getColor(R.color.colorPrimary);
 
         fragmentManager = getSupportFragmentManager();
 
@@ -267,8 +294,9 @@ public class HomeActivity extends MyBaseActivity implements BottomNavigationBar.
             TextView txtTitle = (TextView) convertView.findViewById(R.id.drawer_title);
 
             imgIcon.setImageResource(item.icon);
-            imgIcon.setColorFilter(item.iconColor);
+            imgIcon.setColorFilter(mContext.getResources().getColor(item.iconColor));
             txtTitle.setText(item.title);
+
             return convertView;
         }
     }

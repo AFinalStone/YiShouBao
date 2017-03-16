@@ -87,10 +87,9 @@
 
     <!--闪屏-->
     <string name="Splash_AuthorInfo">AFinalStone</string>
-
     <string name="Splash_appDesc">易售宝</string>
 
-
+    <!--首页抽屉菜单-->
     <string name="drawer_home">首页</string>
     <string name="drawer_setting">设置</string>
     <string name="drawer_share">分享</string>
@@ -99,4 +98,14 @@
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
     <string name="drawer_exit">退出</string>
+
+    <!--设置中心-->
+    <string name="title_Setting">设置中心</string>
+    <!--关于页面-->
+    <string name="title_About">关于</string>
+
+    <!--商家推荐界面-->
+    <string name="title_shopRecommendActivity">优质商家推荐</string>
+    <string name="shopRecommend_btnIntoShop">进入店铺</string>
+    <string name="shopRecommend_tvNewGoodsRecommend">新品推荐</string>
 </resources>

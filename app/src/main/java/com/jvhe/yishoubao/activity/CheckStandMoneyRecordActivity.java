@@ -31,6 +31,9 @@ public class CheckStandMoneyRecordActivity extends MyBaseActivity {
     @BindView(R.id.iv_titleLeft)
     ImageView iv_titleLeft;
 
+    @BindView(R.id.tv_titleLeft)
+    TextView tv_titleLeft;
+
     @BindView(R.id.tv_title)
     TextView tv_title;
 
@@ -43,16 +46,20 @@ public class CheckStandMoneyRecordActivity extends MyBaseActivity {
     private List<Fragment> listFragment = new ArrayList<Fragment>();
     private MyAdapter adapter;
 
+    private static int TAB_MARGIN_DIP = 50;
+
     @Override
     public void initView() {
         setContentView(R.layout.activity_check_stand_money_record);
         ButterKnife.bind(this);
         iv_titleLeft.setVisibility(View.VISIBLE);
+        tv_titleLeft.setVisibility(View.VISIBLE);
+        tv_titleLeft.setText(R.string.title_back);
         tv_title.setText(R.string.title_ResCircle);
 
 
     }
-    private static int TAB_MARGIN_DIP = 50;
+
     @Override
     public void initData() {
 
@@ -73,10 +80,10 @@ public class CheckStandMoneyRecordActivity extends MyBaseActivity {
 
 
 
-    @OnClick({R.id.iv_titleLeft})
+    @OnClick({R.id.linearLayout_titleLeft})
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.iv_titleLeft:
+            case R.id.linearLayout_titleLeft:
                 finish();
                 break;
         }

@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.jvhe.yishoubao.R;
 import com.jvhe.yishoubao.activity.CheckStandMoneyRecordActivity;
+import com.jvhe.yishoubao.activity.MyBaseActivity;
 import com.jvhe.yishoubao.util.CreateQRImageUtil;
 import com.jvhe.yishoubao.util.DensityUtil;
 
@@ -24,7 +25,7 @@ import butterknife.OnClick;
  * Created by SHI on 2017/3/1 13:58
  * 收银台
  */
-public class CheckStandFragment extends MyBaseFragment<AppCompatActivity> {
+public class CheckStandFragment extends MyBaseFragment<MyBaseActivity> {
 
 
     @BindView(R.id.tv_title)
@@ -67,6 +68,7 @@ public class CheckStandFragment extends MyBaseFragment<AppCompatActivity> {
         iv_titleRight.setVisibility(View.VISIBLE);
         iv_titleRight.setImageResource(R.mipmap.icon_check_to_money_record);
         tv_title.setText(R.string.title_CheckStandWithdrawalActivity);
+        showArriveTomorrow();
         return rootView;
     }
 
@@ -95,24 +97,29 @@ public class CheckStandFragment extends MyBaseFragment<AppCompatActivity> {
     private void showArriveTomorrow() {
         //右侧恢复正常颜色
         linearLayout_arriveImmediately.setBackgroundResource(R.drawable.check_stand_shape_check_right_normal);
-        tv_arriveImmediately.setTextColor(getResources().getColor(R.color.colorRed_FFFF6C6C));
-        iv_arriveImmediately.setImageResource(R.mipmap.icon_check_immediately_red);
+        iv_arriveImmediately.setImageResource(R.mipmap.icon_check_immediately_white);
+        tv_arriveImmediately.setTextColor(mActivity.colorPrimary);
+        iv_arriveImmediately.setColorFilter(mActivity.colorPrimary);
 
         linearLayout_arriveTomorrow.setBackgroundResource(R.drawable.check_stand_shape_check_left_select);
         tv_arriveTomorrow.setTextColor(getResources().getColor(R.color.colorWhite_FFFFFFFF));
         iv_arriveTomorrow.setImageResource(R.mipmap.icon_check_tomorry_white);
+        iv_arriveTomorrow.setColorFilter(getResources().getColor(R.color.colorWhite_FFFFFFFF));
     }
 
     //立即到账
     private void showArriveImmediately() {
         //左侧恢复正常颜色
         linearLayout_arriveTomorrow.setBackgroundResource(R.drawable.check_stand_shape_check_left_normal);
-        tv_arriveTomorrow.setTextColor(getResources().getColor(R.color.colorRed_FFFF6C6C));
-        iv_arriveTomorrow.setImageResource(R.mipmap.icon_check_tomorry_red);
+        tv_arriveTomorrow.setTextColor(mActivity.colorPrimary);
+        iv_arriveTomorrow.setImageResource(R.mipmap.icon_check_tomorry_white);
+        iv_arriveTomorrow.setColorFilter(mActivity.colorPrimary);
 
         linearLayout_arriveImmediately.setBackgroundResource(R.drawable.check_stand_shape_check_right_select);
         tv_arriveImmediately.setTextColor(getResources().getColor(R.color.colorWhite_FFFFFFFF));
         iv_arriveImmediately.setImageResource(R.mipmap.icon_check_immediately_white);
+        iv_arriveImmediately.setColorFilter(getResources().getColor(R.color.colorWhite_FFFFFFFF));
+
     }
 
 

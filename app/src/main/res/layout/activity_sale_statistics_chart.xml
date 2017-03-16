@@ -58,8 +58,8 @@
         android:layout_marginTop="30dp"
         android:background="@android:color/white"
         app:tabGravity="fill"
-        app:tabIndicatorColor="@color/colorRed_FFFF6C6C"
-        app:tabSelectedTextColor="@color/colorRed_FFFF6C6C"
+        app:tabIndicatorColor="?attr/colorPrimary"
+        app:tabSelectedTextColor="?attr/colorPrimary"
         app:tabTextColor="@color/colorBlack_FF333333" />
     <View
         android:layout_width="match_parent"
