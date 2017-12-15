@@ -3,7 +3,9 @@ package com.jvhe.yishoubao.view;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Rect;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -84,6 +86,17 @@ public class PopWindowSelectCondition extends PopupWindow {
 		});
 
 	}
+
+    @Override
+    public void showAsDropDown(View anchor) {
+        if (Build.VERSION.SDK_INT >= 24) {
+            Rect rect = new Rect();
+            anchor.getGlobalVisibleRect(rect);
+            int h = anchor.getResources().getDisplayMetrics().heightPixels - rect.bottom;
+            setHeight(h);
+        }
+        super.showAsDropDown(anchor);
+    }
 
 	protected class MyGridAdapter extends MyBaseAdapter<ShoppingMallSelectCondition> {
 
